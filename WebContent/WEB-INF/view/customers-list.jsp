@@ -9,8 +9,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="">
-	
+	<div id="header">
+		<p> Customer Relation Management </p>
+		
+		<!-- button to add new customer -->
+		<input type="button"  value="Add customer" onclick="window.location.href='showFormForAdd';false;" /> 
+		<br>
 	</div>
 	<div id="content">
 		<table>
