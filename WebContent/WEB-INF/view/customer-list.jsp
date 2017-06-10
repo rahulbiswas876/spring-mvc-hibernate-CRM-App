@@ -22,14 +22,19 @@
 				<th> First Name</th>
 				<th> Last Name</th>
 				<th> Email</th>
+				<th> Action</th>
 			</tr>
 			
 			<c:forEach var="item" items="${customerList}">
 			
+			<c:url var="updateLink" value="/customer/updateCustomer">
+				<c:param name="id" value="${item.id}" />
+			</c:url>
 			<tr>
 				<td>${item.firstName}</td>
 				<td>${item.lastName}</td>
 				<td>${item.email}</td>
+				<td><a href=${updateLink}>Update</a></td>
 			</tr>
 
 			</c:forEach>

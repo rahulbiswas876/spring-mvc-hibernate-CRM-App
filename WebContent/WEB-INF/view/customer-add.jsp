@@ -14,7 +14,10 @@
 	</div>
 	
 	<div id="contents">
-		<form:form method="POST" action="${pageContext.request.contextPath}/customer/saveCustomer" modelAttribute="customer">
+		<form:form method="POST" action="${pageContext.request.contextPath}/customer/saveCustomer" 
+								 modelAttribute="customer">
+			
+			<form:hidden path="id"/>
 			<table>
 				<tr>
 					<td>First Name :</td>
